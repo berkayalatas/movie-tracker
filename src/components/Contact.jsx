@@ -12,7 +12,9 @@ export const Contact = (props) => {
         <Row className="d-flex flex-row">
           <Col lg={8}>
             <div class="contact-us">
-              <form name="contact" method="POST"  >
+              <form name="contact"
+               method="POST" data-netlify="true" 
+              data-netlify-honeypot="bot-field" >
                 <label for="customerName">
                   NAME <em>&#x2a;</em>
                 </label>
