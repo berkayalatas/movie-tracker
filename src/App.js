@@ -45,14 +45,8 @@ function App() {
             <Add />
         </Route>     
 
-        <Route path="/404">
-          <NotFound/>
-        </Route>
-
-        <Route path="*">
-            <Redirect to="/404" />
-        </Route>   
-
+        <Route component={NotFound}/>
+ 
       </Switch>
 
     </Router>
