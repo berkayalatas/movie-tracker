@@ -13,8 +13,7 @@ export const Contact = (props) => {
           <Col lg={8}>
             <div class="contact-us">
               <form name="contact"
-               method="POST" data-netlify="true" 
-              data-netlify-honeypot="bot-field" >
+               method="POST" data-netlify="true" >
                 <label for="customerName">
                   NAME <em>&#x2a;</em>
                 </label>
