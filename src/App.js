@@ -2,6 +2,7 @@ import "./App.css";
 import {
   BrowserRouter as Router,
   Switch,
+  Redirect,
   Route
 } from "react-router-dom";
 import {WatchList} from "./components/WatchList"
@@ -10,6 +11,7 @@ import {Header} from "./components/Header"
 import {Watched} from "./components/Watched"
 import {Home} from "./components/Home"
 import {Contact} from "./components/Contact"
+import {NotFound} from "./components/NotFound"
 import "./lib/font-awesome/css/all.min.css"
 
 import {GlobalProvider} from './context/GlobalState'
@@ -41,7 +43,15 @@ function App() {
 
         <Route path="/add">
             <Add />
-        </Route>        
+        </Route>     
+
+        <Route path="/404">
+          <NotFound/>
+        </Route>
+
+        <Route path="*">
+            <Redirect to="/404" />
+        </Route>   
 
       </Switch>
 

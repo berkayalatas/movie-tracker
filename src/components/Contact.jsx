@@ -12,13 +12,13 @@ export const Contact = (props) => {
         <Row className="d-flex flex-row">
           <Col lg={8}>
             <div class="contact-us">
-              <form method="POST" data-netlify="true">
+              <form name="contact" method="POST" data-netlify="true">
                 <label for="customerName">
                   NAME <em>&#x2a;</em>
                 </label>
                 <input
                   id="customerName"
-                  name="customerName"
+                  name="name"
                   required
                   type="text"
                 />
@@ -27,7 +27,7 @@ export const Contact = (props) => {
                 </label>
                 <input
                   id="customerEmail"
-                  name="customerEmail"
+                  name="email"
                   required
                   type="email"
                 />
@@ -36,15 +36,12 @@ export const Contact = (props) => {
                 </label>
                 <textarea
                   id="customerNote"
-                  name="customerNote"
+                  name="note"
                   required
                   rows="4"
                 ></textarea>
                 <div className="text-center">
                   <button id="customerOrder" type="submit"
-                    onClick={ (event)=> {
-                        event.preventDefault();
-                    }}
                   >
                     SEND
                   </button>
