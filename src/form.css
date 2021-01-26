@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us {
+    background: #f8f4e5;
+    padding: 10px 50px;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+    font-size: 15pt;
+    line-height: 24pt;
+    font-weight: 600;
+    font-family: "Spartan";
+}
+
+input {
+    margin-bottom: 26pt;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24pt;
+    font-style: italic;
+    margin: 0 0 0.5em 0;
+}
+
+span {
+    font-size: 8pt;
+}
+
+
+input,
+textarea {
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    background: #f3f2ee;
+    padding-left: 2px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #6bd4b1;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    line-height: 24pt;
+    padding: 3px 22px;
+    border: 1px black;
+    background: #0dc745;
+    color: rgb(241, 235, 235);
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    text-align: center;
+    margin: 10px;
+}
+
+button:hover {
+    color: #0f1b13;
+    border-bottom: 2px solid #0db640;
+    opacity: 85%;
+}
+
+::selection {
+    background: #ffc7b8;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    border: 1px solid #6bd4b1;
+    -webkit-text-fill-color: #2A293E;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.logo_container{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+}
+.logo_container a{
+    margin:15px;
+}
+
+.logo_container a:hover{
+    margin:15px;
+    opacity: 80%;
+}

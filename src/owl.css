@@ -1,0 +1,18 @@
+.img {
+    height: 550px;
+    width: 100% !important;
+    border: 5px solid black;
+    box-shadow: 6px 6px 6px 6px  rgb(81, 140, 207);
+}
+
+@media screen and (min-width: 993px) and (max-width: 1300px) {
+    .img {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 992px) {
+    .img {
+        height: 100%;
+    }
+}
