@@ -76,11 +76,13 @@ button {
 button:hover {
     color: #0f1b13;
     border-bottom: 2px solid #0db640;
+    opacity:0.8 ;
 }
 
 ::selection {
     background: #ffc7b8;
 }
+
 
 
 .logo_container{
@@ -96,4 +98,5 @@ button:hover {
 
 .logo_container a:hover{
     margin:15px;
+    opacity: 0.8;
 }
