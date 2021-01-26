@@ -29,19 +29,19 @@ function App() {
             <Home />
         </Route>
 
-        <Route path="/contact">
+        <Route exact path="/contact">
             <Contact />
         </Route>
 
-        <Route path="/watched">
+        <Route exact path="/watched">
             <Watched />
         </Route>
 
-        <Route path="/wishlist">
+        <Route exact path="/wishlist">
             <WatchList />
         </Route>
 
-        <Route path="/add">
+        <Route exact path="/add">
             <Add />
         </Route>     
 
