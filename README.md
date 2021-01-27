@@ -1,21 +1,22 @@
-### https://movie-tracker-reactapp.netlify.app
+### WEBSITE : https://movie-tracker-reactapp.netlify.app
 
 ####  Search Any Movie
 ####  Keep track of your Movies
 ####  Add movie to your Watched
 #### Add movie to your Wishlist 
 
-- [ ] React Hooks
-- [ ] React Routers
-- [ ] The Movie Database (TMDb) API
-- [ ] React Bootsrap
-- [ ] Owl Carousel
-- [ ] Netlify Forms
+- [x]  React Hooks
+- [x]  React Routers
+- [x]  The Movie Database (TMDb) API- 
+- [x]  Movies are stored in localStorage.
+- [x]  React Bootsrap
+- [x]  Email Service (Email.js) for contact form
+- [x]  Owl Carousel (image slider )
 
 
 ![1](https://user-images.githubusercontent.com/59448862/105912591-c5563e80-603c-11eb-8da5-f74b9dd286ab.PNG)
 ![3](https://user-images.githubusercontent.com/59448862/105912598-c6876b80-603c-11eb-9a6d-5340623fc70a.PNG)
-![4](https://user-images.githubusercontent.com/59448862/105913548-10248600-603e-11eb-932d-9212f9fc2dca.PNG)
+![new](https://user-images.githubusercontent.com/59448862/106041906-71eff900-60ed-11eb-863e-590c35cc980e.PNG)
 ![2](https://user-images.githubusercontent.com/59448862/105912599-c7200200-603c-11eb-8dc1-284ff0d9ed5e.PNG)
 
 
