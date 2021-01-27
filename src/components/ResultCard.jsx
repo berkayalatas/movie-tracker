@@ -55,7 +55,7 @@ export const ResultCard = ({ movie }) => {
                 type="button" 
                 disabled={watchlistDisabled}
                 onClick={()=>addMovieToWatchlist(movie)}>
-              Add to Watch List
+              Add to Wishlist
             </button>
 
             <button className="btn my-1" 

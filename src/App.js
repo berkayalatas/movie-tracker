@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import {WatchList} from "./components/WatchList"
+import {WishList} from "./components/WishList"
 import {Add} from "./components/Add"
 import {Header} from "./components/Header"
 import {Watched} from "./components/Watched"
@@ -16,6 +16,7 @@ import "./lib/font-awesome/css/all.min.css"
 import {GlobalProvider} from './context/GlobalState'
 
 function App() {
+  const reload = () => window.location.reload();
   return (
   <>
   <GlobalProvider>
@@ -37,9 +38,9 @@ function App() {
         </Route>
 
         <Route exact path="/wishlist">
-            <WatchList />
+            <WishList />
         </Route>
-
+              
         <Route exact path="/add">
             <Add />
         </Route>     

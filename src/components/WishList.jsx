@@ -2,13 +2,13 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import { MovieCard } from "./MovieCard";
 
-export const WatchList = () => {
+export const WishList = () => {
   const { watchlist } = useContext(GlobalContext);
   return (
     <div className="movie-page">
       <div className="containerr">
         <div className="header">
-          <h1 className="text-dark">My Watchlist</h1>
+          <h1 className="text-dark">My Wishlist</h1>
           <span className="count-pill">
             {watchlist.length}
             {watchlist.length <= 1 ? " Movie" : " Movies"}
