@@ -7,7 +7,8 @@
 
 - [x]  React Hooks
 - [x]  React Routers
-- [x]  The Movie Database (TMDb) API
+- [x]  The Movie Database (TMDb) API- 
+- [x]  Movies are stored in localStorage.
 - [x]  React Bootsrap
 - [x]  Email Service (Email.js) for contact form
 - [x]  Owl Carousel (image slider )
