@@ -31,13 +31,13 @@ export const Header = () => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link className="mx-lg-4">
-            <Link to="/" className="text-dark" style={navItems}>
+            <Link to="/" className="text-dark p-2" style={navItems}>
               Home
             </Link>
           </Nav.Link>
 
           <Nav.Link>
-            <Link to="/contact" className="text-dark" style={navItems}>
+            <Link to="/contact" className="text-dark p-2" style={navItems}>
               Contact
             </Link>
           </Nav.Link>
@@ -45,20 +45,20 @@ export const Header = () => {
 
         <Nav>
           <Nav.Link>
-            <Link className="text-dark" to="/watched" style={navItems}>
+            <Link className="text-dark p-2" to="/watched" style={navItems}>
               Watched
             </Link>
           </Nav.Link>
 
           <Nav.Link>
-            <Link to="/wishlist" className="text-dark mx-lg-4" style={navItems}>
+            <Link to="/wishlist" className="text-dark mx-lg-4 p-2" style={navItems}>
               Wishlist
             </Link>
           </Nav.Link>
 
           <Nav.Link>
             <Link to="/add" id="addMovieButton">
-            <i class="fas fa-plus-circle mr-1"></i>Add Movie
+            <i className="fas fa-plus-circle mr-1"></i>Add Movie
             </Link>
           </Nav.Link>
         </Nav>

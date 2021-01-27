@@ -1,49 +1,65 @@
-import React from "react";
+import React,{useState} from "react";
+import emailjs from "emailjs-com";
 import "../form.css";
-import { Container, Row, Col } from "react-bootstrap";
-
-
+import { Container, Row, Col, Alert } from "react-bootstrap";
+  
 
 export const Contact = (props) => {
+
+  const [emailSent, setEmailSent] = useState(false)
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_es7l897",
+        "template_1j71v9z",
+        e.target,
+        "user_5QxnFjF9fjdqCMAYK0gki"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+
+    setEmailSent(!emailSent)
+  }
+
   return (
     <>
       <h3> CONTACT </h3>
       <Container fluid>
         <Row className="d-flex flex-row">
           <Col lg={8}>
-            <div class="contact-us">
-              <form name="contact"
-               method="POST" data-netlify="true" >
-                <label for="customerName">
+            { emailSent &&
+              <Alert variant="success" className="ml-5">
+                We received your message. We will contact you soon.
+              </Alert>
+            }
+            <div className="contact-us">
+              <form onSubmit={sendEmail} id="contact-form">
+                <label>
                   NAME <em>&#x2a;</em>
                 </label>
-                <input
-                  id="customerName"
-                  name="name"
-                  required
-                  type="text"
-                />
-                <label for="customerEmail">
+                <input name="name" required type="text" />
+                <label>
                   EMAIL <em>&#x2a;</em>
                 </label>
-                <input
-                  id="customerEmail"
-                  name="email"
-                  required
-                  type="email"
-                />
-                <label for="customerNote">
+                <input name="email" required type="email" />
+                <label>
                   YOUR MESSAGE <em>&#x2a;</em>
                 </label>
-                <textarea
-                  id="customerNote"
-                  name="note"
-                  required
-                  rows="4"
-                ></textarea>
+                <textarea name="message" required rows="4"></textarea>
                 <div className="text-center">
-                  <button id="customerOrder" type="submit"
-                  >
+                  <button type="submit" id="submitForm" value="SEND">
+                    {" "}
                     SEND
                   </button>
                 </div>
