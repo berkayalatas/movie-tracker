@@ -5,12 +5,12 @@
 ####  Add movie to your Watched
 #### Add movie to your Wishlist 
 
-- [ ] React Hooks
-- [ ] React Routers
-- [ ] The Movie Database (TMDb) API
-- [ ] React Bootsrap
-- [ ] Owl Carousel
-- [ ] Netlify Forms
+- [x]  React Hooks
+- [x]  React Routers
+- [x]  The Movie Database (TMDb) API
+- [x]  React Bootsrap
+- [x]  Email Service (Email.js) for contact form
+- [x]  Owl Carousel (image slider )
 
 
 ![1](https://user-images.githubusercontent.com/59448862/105912591-c5563e80-603c-11eb-8da5-f74b9dd286ab.PNG)
