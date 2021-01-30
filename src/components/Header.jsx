@@ -18,8 +18,7 @@ export const Header = () => {
  
   return (
     <Navbar collapseOnSelect expand="lg"
-      style={{ background: "rgb(156,200,79)",
-        background: "linear-gradient(90deg, rgba(156,200,79,1) 0%, rgba(183,187,34,1) 50%, rgba(156,200,79,1) 100%)" }}
+      style={{background: "linear-gradient(90deg, rgba(156,200,79,1) 0%, rgba(183,187,34,1) 50%, rgba(156,200,79,1) 100%)" }}
     variant="dark">
       <Link to="/">
          <img src={logo} width="65" alt="logo" />

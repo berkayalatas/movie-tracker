@@ -15,8 +15,6 @@ export const WishList = () => {
           </span>
         </div>
 
-
-
         {watchlist.length > 0 ? (
           <div className="movie-grid">
             {watchlist.map((movie) => (
@@ -24,10 +22,11 @@ export const WishList = () => {
             ))}
           </div>
         ) : (
-            <img src="https://thumbs.dreamstime.com/b/funny-cute-bear-panda-holding-empty-banner-card-to-do-list-place-text-childish-template-announcement-agenda-note-funny-192143092.jpg"
-             alt="EMPTY WATCHLIST"
-             style={{maxWidth:350, marginLeft:0}}
-            />
+          <img
+            src="https://thumbs.dreamstime.com/b/funny-cute-bear-panda-holding-empty-banner-card-to-do-list-place-text-childish-template-announcement-agenda-note-funny-192143092.jpg"
+            alt="EMPTY WATCHLIST"
+            style={{ maxWidth: 350, marginLeft: 0 }}
+          />
         )}
       </div>
     </div>
