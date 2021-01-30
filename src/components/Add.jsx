@@ -24,7 +24,7 @@ export const Add = () => {
   };
   return (
     <>
-    <div className="text-dark" style={{textAlign:"center", marginTop:25}}>
+    <div className="text-warning" style={{textAlign:"center", marginTop:25}}>
       <h1>Search Movie</h1>
     </div>
       <div className="add-page">

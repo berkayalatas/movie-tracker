@@ -8,7 +8,7 @@ export const WishList = () => {
     <div className="movie-page">
       <div className="containerr">
         <div className="header">
-          <h1 className="text-dark">My Wishlist</h1>
+          <h1 className="text-warning">My Wishlist</h1>
           <span className="count-pill">
             {watchlist.length}
             {watchlist.length <= 1 ? " Movie" : " Movies"}
@@ -24,7 +24,7 @@ export const WishList = () => {
             ))}
           </div>
         ) : (
-            <img src="https://i.pinimg.com/originals/ae/8a/c2/ae8ac2fa217d23aadcc913989fcc34a2.png"
+            <img src="https://thumbs.dreamstime.com/b/funny-cute-bear-panda-holding-empty-banner-card-to-do-list-place-text-childish-template-announcement-agenda-note-funny-192143092.jpg"
              alt="EMPTY WATCHLIST"
              style={{maxWidth:350, marginLeft:0}}
             />

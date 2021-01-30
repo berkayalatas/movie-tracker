@@ -16,7 +16,7 @@ import "./lib/font-awesome/css/all.min.css"
 import {GlobalProvider} from './context/GlobalState'
 
 function App() {
-  const reload = () => window.location.reload();
+ 
   return (
   <>
   <GlobalProvider>

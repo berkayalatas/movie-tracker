@@ -7,8 +7,9 @@ import { Row, Col, Container } from "react-bootstrap";
 import {Link } from 'react-router-dom'
 export const Home = (props) => {
   return (
-    <>
-      <Container fluid className="my-1">
+    <div>
+      <Container fluid  
+      style={{backgroundColor:"#f8f4e5", height:"130vh"}}>
         <Row>
           <Col lg={7}>
             <OwlCarousel
@@ -57,8 +58,8 @@ export const Home = (props) => {
               </div>
             </OwlCarousel>
           </Col>
-          <Col lg={5}>
-            <h1 className="mb-4 text-dark my-2">
+          <Col lg={5} >
+            <h1 className="mb-4 text-success my-2">
               <strong> Welcome to Movie Tracker </strong>
             </h1>
 
@@ -102,6 +103,6 @@ export const Home = (props) => {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };

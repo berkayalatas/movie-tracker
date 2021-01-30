@@ -6,7 +6,7 @@
 }
 
 .contact-us {
-    background: #f8f4e5;
+    
     padding: 10px 50px;
 }
 
@@ -63,20 +63,21 @@ button {
     line-height: 24pt;
     padding: 3px 22px;
     border: 1px black;
-    background: #0dc745;
-    color: rgb(241, 235, 235);
+    background: #15b344;
+    color: rgb(255, 255, 255);
     letter-spacing: 2px;
     transition: 0.2s all ease-in-out;
     border-bottom: 2px solid transparent;
     outline: none;
     text-align: center;
     margin: 10px;
+    border-radius:10%;
+    border: 1px solid black;
 }
 
 button:hover {
-    color: #0f1b13;
-    border-bottom: 2px solid #0db640;
-    opacity:0.8 ;
+    background: #4eeb7d;
+    color: #0f1b13 ;
 }
 
 ::selection {

@@ -1,18 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap');
- 
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 :root {
   --primary: #105894;
   --secondary: #21d07a;
   --white: #fff;
 }
 
+ 
 body {
-  font-family: 'Poppins', sans-serif!important;
+  /* font-family: 'Poppins', sans-serif!important; */
+  font-family: 'Luckiest Guy', cursive !important;
+  letter-spacing: 2px;
   padding: 0;
   margin: 0;
   background-color: #f8f4e5 !important;
+  background: url(./lib/img/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .link {
@@ -293,22 +301,21 @@ body {
 
 #movie-buttons button:hover{
   border-bottom: 3px solid black; 
-  padding: 9px; 
 }
 
 #addMovieButton{
   color: rgb(8, 7, 7);
   text-transform: capitalize;
-  background-color: #1abb6d;
+  background-color: #0b0c0c;
   border-radius: 7px;
   padding:9px;
   color:#fff;
 }
 
 #addMovieButton:hover{
-  border-bottom: 3px solid rgb(0, 0, 0);
-  background-color: #0e703f;
-  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  background-color: #d8e6df;
+  color: rgb(10, 10, 10);
   text-decoration: none;
 }
 
@@ -344,6 +351,12 @@ input:focus {
 }
 
 /* Header Styles */
+
+.navMember:hover{
+  color: #0e703f !important;
+}
+
+
 header {
   background-color: var(--primary);
 }
@@ -399,13 +412,13 @@ header .nav-links li:last-child {
 
 .add-content .input-wrapper input {
   width: 100%;
-  background-color: rgb(194, 194, 219);
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  color: black;
+  background-color: rgb(37, 37, 39);
+  padding: 11px;
+  border-radius: 15px;
+  border: 2px solid white;
+  color: rgb(255, 255, 255);
   font-size: 1.25rem;
-  box-shadow: 2px 2px 2px 2px  rgb(86, 151, 224);
+  box-shadow: 3px 3px 3px 3px  rgb(66, 134, 146);
 }
 
 .results {
@@ -472,12 +485,12 @@ header .nav-links li:last-child {
 
 .count-pill {
   display: block;
-  background-color: rgb(46, 46, 173);
+  background-color: rgb(192, 189, 2);
   padding: 5px 10px;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 999px;
-  color: whitesmoke;
+  color: rgb(20, 19, 19);
   text-align: center;
 }
 

@@ -1,12 +1,10 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "../form.css";
 import { Container, Row, Col, Alert } from "react-bootstrap";
-  
 
 export const Contact = (props) => {
-
-  const [emailSent, setEmailSent] = useState(false)
+  const [emailSent, setEmailSent] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
@@ -29,20 +27,20 @@ export const Contact = (props) => {
 
     e.target.reset();
 
-    setEmailSent(!emailSent)
+    setEmailSent(!emailSent);
   }
 
   return (
-    <>
+    <div  style={{backgroundColor:"#f8f4e5", height:"110vh"}}>
       <h3> CONTACT </h3>
       <Container fluid>
         <Row className="d-flex flex-row">
           <Col lg={8}>
-            { emailSent &&
+            {emailSent && (
               <Alert variant="success" className="ml-5">
                 We received your message. We will contact you soon.
               </Alert>
-            }
+            )}
             <div className="contact-us">
               <form onSubmit={sendEmail} id="contact-form">
                 <label>
@@ -92,6 +90,6 @@ export const Contact = (props) => {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };

@@ -15,16 +15,19 @@ export const Header = () => {
         "textDecoration": "none",
         "fontWeight":600,
     }
-
+ 
   return (
-    <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
+    <Navbar collapseOnSelect expand="lg"
+      style={{ background: "rgb(156,200,79)",
+        background: "linear-gradient(90deg, rgba(156,200,79,1) 0%, rgba(183,187,34,1) 50%, rgba(156,200,79,1) 100%)" }}
+    variant="dark">
       <Link to="/">
          <img src={logo} width="65" alt="logo" />
       </Link>  
       
 
       <Navbar.Brand>
-        <Link to="/" className="text-light" style={brandStyle}> TRACKER</Link>
+        <Link to="/" className="text-dark" style={brandStyle}> TRACKER</Link>
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -37,7 +40,7 @@ export const Header = () => {
           </Nav.Link>
 
           <Nav.Link>
-            <Link to="/contact" className="text-dark p-2" style={navItems}>
+            <Link to="/contact" className="text-dark  p-2" style={navItems}>
               Contact
             </Link>
           </Nav.Link>
