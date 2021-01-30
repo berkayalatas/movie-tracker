@@ -14,10 +14,12 @@
 - [x]  Owl Carousel (image slider )
 
 
-![1](https://user-images.githubusercontent.com/59448862/105912591-c5563e80-603c-11eb-8da5-f74b9dd286ab.PNG)
-![3](https://user-images.githubusercontent.com/59448862/105912598-c6876b80-603c-11eb-9a6d-5340623fc70a.PNG)
-![new](https://user-images.githubusercontent.com/59448862/106041906-71eff900-60ed-11eb-863e-590c35cc980e.PNG)
-![2](https://user-images.githubusercontent.com/59448862/105912599-c7200200-603c-11eb-8dc1-284ff0d9ed5e.PNG)
+![1](https://user-images.githubusercontent.com/59448862/106369656-53dffe00-6364-11eb-815f-f5828d7309b9.PNG)
+![2](https://user-images.githubusercontent.com/59448862/106369657-55a9c180-6364-11eb-97f8-6750c2cf7e75.PNG)
+![4](https://user-images.githubusercontent.com/59448862/106369658-57738500-6364-11eb-932f-d4a2603c3a56.PNG)
+![last](https://user-images.githubusercontent.com/59448862/106369660-5b070c00-6364-11eb-8d73-57e66774c361.PNG)
+![3](https://user-images.githubusercontent.com/59448862/106369662-5e9a9300-6364-11eb-8f24-9af591f76766.PNG)
+
 
 
 
