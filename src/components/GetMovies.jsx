@@ -3,8 +3,6 @@ import CategoryMovieCard from "./CategoryMovieCard";
 
 
 const GetMovies = ({movie}) => {
-  const [error, setError] = useState(null);
-  const [isLoaded, setIsLoaded] = useState(false);
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -14,11 +12,9 @@ const GetMovies = ({movie}) => {
       .then((response) => response.json())
       .then(
         (data) => {
-          setIsLoaded(true);
           setMovies(data.results);
         },
         (error) => {
-          setError(error);
           console.log(error);
         }
       );
