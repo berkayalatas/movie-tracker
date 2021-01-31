@@ -3,7 +3,7 @@ import React from 'react'
 export const NotFound = () => {
     return (
         <div className="text-center">
-             <h2 className="display-5">
+             <h2 className="text-warning display-5 ">
                  OoOps... Something went wrong 
              </h2>
             <img width={750}

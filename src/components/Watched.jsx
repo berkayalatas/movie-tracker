@@ -7,7 +7,6 @@ import {Link} from 'react-router-dom'
 export const Watched = () => {
     const {watched} = useContext(GlobalContext)
  
-
   return (
     <div className="movie-page">
       <div className="containerr">
@@ -34,8 +33,8 @@ export const Watched = () => {
           </Breadcrumb>
         {watched.length > 0 ? (
           <div className="movie-grid">
-            {watched.map((movie) => (
-              <MovieCard movie={movie} type="watched" />
+            {watched.map((movie,index) => (
+              <MovieCard movie={movie} key={index} type="watched" />
             ))}
           </div>
         ) : (

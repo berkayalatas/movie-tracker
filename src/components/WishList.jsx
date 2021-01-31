@@ -33,8 +33,8 @@ export const WishList = () => {
           </Breadcrumb>
         {watchlist.length > 0 ? (
           <div className="movie-grid">
-            {watchlist.map((movie) => (
-              <MovieCard movie={movie} type="watchlist" />
+            {watchlist.map((movie,index) => (
+              <MovieCard movie={movie} key={index} type="watchlist" />
             ))}
           </div>
         ) : (

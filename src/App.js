@@ -11,6 +11,7 @@ import {Watched} from "./components/Watched"
 import {Home} from "./components/Home"
 import {Contact} from "./components/Contact"
 import {NotFound} from "./components/NotFound"
+import GetMovies from './components/GetMovies'
 import "./lib/font-awesome/css/all.min.css"
 
 import {GlobalProvider} from './context/GlobalState'
@@ -27,6 +28,10 @@ function App() {
 
         <Route exact path="/">
             <Home />
+        </Route>
+
+        <Route exact path="/movies">
+            <GetMovies />
         </Route>
 
         <Route exact path="/contact">

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800");
+body {
+  box-sizing: border-box;
+  font-family: 'Luckiest Guy', cursive !important;
+  letter-spacing: 2px;
+}
+ 
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: 0;
+  cursor: pointer;
+}
+button:focus {
+  outline: 0;
+}
+
+.movie-cards {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  min-height: 430px;
+  display: block;
+  margin: 6vh auto;
+  border-radius: 8px;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .movie-cards {
+    width: 100%;
+    max-width: 96%;
+    background-position: 50% 0%;
+    background-size: cover;
+    height: 500px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .movie-cards {
+    background-position: 50% 0%;
+    background-size: cover;
+    height: auto;
+  }
+}
+ 
+.movie-card__overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(to right, rgba(42, 159, 255, 0.2) 0%, #212120 60%, #212120 100%);
+  background-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.movie-card__content {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  float: right;
+  color: #ffffff;
+  padding: .2rem;
+  font-size: 14px;
+  text-transform: capitalize ;
+}
+
+
+@media screen and (max-width: 600px) {
+  .movie-card__content {
+    margin-top: 4.2em;
+    width: 100%;
+    float: inherit;
+    max-width: 100%;
+    padding: 0 1em 1em;
+    font-size: 14px;
+  }
+}
+.movie-card__header {
+  margin-bottom: 2em;
+}
+.movie-card__title {
+  margin-bottom: 0.25em;
+  opacity: 0.9;
+}
+.movie-card__info {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1em;
+  color: #f5f82b;
+  line-height: 1;
+  margin: 0;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.movie-card__desc {
+  font-weight: 300;
+  opacity: 0.84;
+  margin-bottom: 2em;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 3px solid #ffffff;
+}
+
+
+
+.btn-outline:hover {
+  border-color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 1px 8px 0px rgba(245, 199, 0, 0.2);
+}

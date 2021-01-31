@@ -93,8 +93,8 @@ export const Home = (props) => {
             </ul>
 
             <div className="text-center mt-4">
-              <Link to="/add"
-                className="btn btn-success mt-4"
+              <Link to="/add" id="get-started"
+                className="mt-4"
                 style={{padding:13}}
               >
                 Get Started <i className="fas fa-play mx-1"></i>
