@@ -1,8 +1,9 @@
 ### WEBSITE : https://movie-tracker-reactapp.netlify.app
 
-####  Search Any Movie
-####  Keep track of your Movies
-####  Add movie to your Watched
+#### Search Any Movie
+#### See Latest Movies 
+#### Keep track of your Movies
+#### Add movie to your Watched
 #### Add movie to your Wishlist 
 
 - [x]  React Hooks
