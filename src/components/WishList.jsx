@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import { MovieCard } from "./MovieCard";
+import {Breadcrumb} from "react-bootstrap"
+import {Link} from 'react-router-dom'
 
 export const WishList = () => {
   const { watchlist } = useContext(GlobalContext);
@@ -9,12 +11,26 @@ export const WishList = () => {
       <div className="containerr">
         <div className="header">
           <h1 className="text-warning">My Wishlist</h1>
+
           <span className="count-pill">
             {watchlist.length}
             {watchlist.length <= 1 ? " Movie" : " Movies"}
           </span>
         </div>
-
+        <Breadcrumb className="w-50">
+            <Breadcrumb.Item className=" bg-warning">
+              <Link  className=" text-dark" to="/"> Home </Link> 
+            </Breadcrumb.Item>
+            <Breadcrumb.Item  className=" bg-warning">
+              <Link className=" text-dark" to="/watched"> Watched </Link> 
+            </Breadcrumb.Item>
+            <Breadcrumb.Item  className=" bg-warning" >
+              <Link className=" text-dark" to="/add"> Search </Link> 
+            </Breadcrumb.Item >
+            <Breadcrumb.Item className=" bg-warning" active>
+              <Link className=" text-dark" to="/wishlist"> Wishlist </Link> 
+            </Breadcrumb.Item >
+          </Breadcrumb>
         {watchlist.length > 0 ? (
           <div className="movie-grid">
             {watchlist.map((movie) => (
