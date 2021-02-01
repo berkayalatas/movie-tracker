@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
+import alertify from 'alertifyjs'
 
 export const MovieControls = ({ type, movie }) => {
   const {
@@ -16,14 +17,21 @@ export const MovieControls = ({ type, movie }) => {
           <button className="ctrl-btn" data-toggle="tooltip" 
             data-placement="bottom" 
             title="Move to Watched" 
-          onClick={()=> addMovieToWatched(movie)} >
+            onClick={()=> {
+              addMovieToWatched(movie)
+              alertify.warning("Moved to Watched");
+              }} >
             <i className="fa-fw far fa-eye"></i>
           </button>
 
           <button data-toggle="tooltip" 
             data-placement="bottom" 
             title="Remove From Wishlist" 
-          onClick={()=> removeMovieFromWatchlist(movie.id)}
+            onClick={()=> {
+                removeMovieFromWatchlist(movie.id)
+                alertify.error("Removed from Wishlist")
+              }
+            }
             className="ctrl-btn"
           >
             <i className="fa-fw fa fa-times"></i>
@@ -36,7 +44,10 @@ export const MovieControls = ({ type, movie }) => {
           <button className="ctrl-btn" data-toggle="tooltip" 
             data-placement="bottom" 
             title="Move to Wishlist" 
-            onClick={ ()=> {moveToWatchlist(movie)} }
+            onClick={ ()=> {
+              moveToWatchlist(movie);
+              alertify.warning("Moved to Wishlist")
+            }}
           >
             <i className="fa-fw far fa-eye-slash"></i>
           </button>
@@ -45,7 +56,10 @@ export const MovieControls = ({ type, movie }) => {
             data-placement="bottom" 
             title="Remove From Watched" 
             className="ctrl-btn"
-            onClick={ ()=> {removeFromWatched(movie.id)} } 
+            onClick={ ()=> {
+              removeFromWatched(movie.id);
+              alertify.error("Removed from Watched");
+            }} 
           >
             <i className="fa-fw fa fa-times"></i>
           </button>

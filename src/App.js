@@ -13,8 +13,8 @@ import {Contact} from "./components/Contact"
 import {NotFound} from "./components/NotFound"
 import GetMovies from './components/GetMovies'
 import "./lib/font-awesome/css/all.min.css"
-
 import {GlobalProvider} from './context/GlobalState'
+import 'alertifyjs/build/css/alertify.min.css';
 
 function App() {
  
