@@ -12,6 +12,7 @@
 - [x]  Movies are stored in localStorage.
 - [x]  React Bootsrap
 - [x]  Email Service (Email.js) for contact form
+- [x]  Alertify js for notifications
 - [x]  Owl Carousel (image slider )
 
 
