@@ -58,7 +58,7 @@ const CategoryMovieCard = ({ movie }) => {
                     disabled={watchlistDisabled}
                     onClick={()=>{
                       addMovieToWatchlist(movie);
-                      alertify.success("Added to Watchlist");
+                      alertify.success("Added to Wishlist");
                     }}>
                 Add to Wishlist
                 </button>
