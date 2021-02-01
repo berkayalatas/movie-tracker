@@ -1,8 +1,9 @@
 ### WEBSITE : https://movie-tracker-reactapp.netlify.app
 
-####  Search Any Movie
-####  Keep track of your Movies
-####  Add movie to your Watched
+#### Search Any Movie
+#### See Latest Movies 
+#### Keep track of your Movies
+#### Add movie to your Watched
 #### Add movie to your Wishlist 
 
 - [x]  React Hooks
@@ -14,11 +15,12 @@
 - [x]  Owl Carousel (image slider )
 
 
-![1](https://user-images.githubusercontent.com/59448862/106369656-53dffe00-6364-11eb-815f-f5828d7309b9.PNG)
-![a](https://user-images.githubusercontent.com/59448862/106382188-0fd61300-63cf-11eb-97be-69bb82fdca16.PNG)
-![4](https://user-images.githubusercontent.com/59448862/106369658-57738500-6364-11eb-932f-d4a2603c3a56.PNG)
-![b](https://user-images.githubusercontent.com/59448862/106382190-12d10380-63cf-11eb-9077-90ae9bc297f1.PNG)
-![3](https://user-images.githubusercontent.com/59448862/106369662-5e9a9300-6364-11eb-8f24-9af591f76766.PNG)
+![1](https://user-images.githubusercontent.com/59448862/106397037-8816f580-641c-11eb-9888-7b8e1831e870.PNG)
+![2](https://user-images.githubusercontent.com/59448862/106397040-8a794f80-641c-11eb-8c90-1bf72703c962.PNG)
+![3](https://user-images.githubusercontent.com/59448862/106397041-8d744000-641c-11eb-82b2-3a5a34f01552.PNG)
+![watched](https://user-images.githubusercontent.com/59448862/106397043-8fd69a00-641c-11eb-9020-ec832c2c2e0a.PNG)
+![4](https://user-images.githubusercontent.com/59448862/106397049-9238f400-641c-11eb-9d23-3ecaf7c42048.PNG)
+![Last](https://user-images.githubusercontent.com/59448862/106397059-97963e80-641c-11eb-8440-428983e3cca3.PNG)
 
 
 
