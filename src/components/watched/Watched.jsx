@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
-import { GlobalContext } from "../context/GlobalState";
-import { MovieCard } from "./MovieCard";
+import { GlobalContext } from "../../context/GlobalState";
+import { MovieCard } from "../MovieCard";
 import {Breadcrumb} from "react-bootstrap"
 import {Link} from 'react-router-dom'
 

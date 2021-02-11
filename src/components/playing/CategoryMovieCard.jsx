@@ -1,7 +1,7 @@
 import React from "react";
-import "../MoviesCard.css";
+import "../../../src/MoviesCard.css"
 import {useContext} from "react";
-import {GlobalContext} from '../context/GlobalState'
+import {GlobalContext} from '../../context/GlobalState'
 import alertify from 'alertifyjs'
 
 const CategoryMovieCard = ({ movie }) => {
@@ -58,7 +58,7 @@ const CategoryMovieCard = ({ movie }) => {
                     disabled={watchlistDisabled}
                     onClick={()=>{
                       addMovieToWatchlist(movie);
-                      alertify.success("Added to Watchlist");
+                      alertify.success("Added to Wishlist");
                     }}>
                 Add to Wishlist
                 </button>

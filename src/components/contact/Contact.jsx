@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import "../form.css";
+import "../../form.css";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 
 export const Contact = (props) => {

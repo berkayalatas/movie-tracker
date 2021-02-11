@@ -1,5 +1,5 @@
 import React,{useContext} from "react";
-import {GlobalContext} from '../context/GlobalState'
+import {GlobalContext} from '../../context/GlobalState'
 import alertify from 'alertifyjs'
 
 export const ResultCard = ({ movie }) => {

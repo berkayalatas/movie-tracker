@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../lib/img/logo.png";
+import logo from "../../lib/img/logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav } from "react-bootstrap";
 
@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <Navbar
       collapseOnSelect
-      expand="lg"
+      expand="xl"
       style={{
         background:
           "linear-gradient(90deg, rgba(156,200,79,1) 0%, rgba(183,187,34,1) 50%, rgba(156,200,79,1) 100%)",
@@ -41,19 +41,27 @@ export const Header = () => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Link
-            to="/"
-            className="mx-lg-4 text-center text-dark py-1"
-            style={navItems}
-          >
-            Home
-          </Link>
-
-          <Link
-            to="/movies"
+            to="/playing"
             className="text-dark mx-lg-4 text-center py-1"
             style={navItems}
           >
-            Movies
+            Playing
+          </Link>
+
+          <Link
+            to="/popular"
+            className="text-dark mx-lg-4 text-center py-1"
+            style={navItems}
+          >
+            Popular
+          </Link>
+
+          <Link
+            to="/top-rated"
+            className="text-dark mx-lg-4 text-center py-1"
+            style={navItems}
+          >
+            Top Rated
           </Link>
 
           <Link

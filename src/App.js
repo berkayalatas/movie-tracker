@@ -4,14 +4,16 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import {WishList} from "./components/WishList"
-import {Add} from "./components/Add"
-import {Header} from "./components/Header"
-import {Watched} from "./components/Watched"
+import {WishList} from "./components/wishlist/WishList"
+import {Add} from "./components/add/Add"
+import {Header} from "./components/navbar/Header"
+import {Watched} from "./components/watched/Watched"
 import {Home} from "./components/Home"
-import {Contact} from "./components/Contact"
-import {NotFound} from "./components/NotFound"
-import GetMovies from './components/GetMovies'
+import {Contact} from "./components/contact/Contact"
+import {NotFound} from "./components/notFound_404/NotFound"
+import GetMovies from './components/playing/GetMovies'
+import GetTopRated from './components/topRated/GetTopRated'
+import GetPopular from './components/popular/GetPopular'
 import "./lib/font-awesome/css/all.min.css"
 import {GlobalProvider} from './context/GlobalState'
 import 'alertifyjs/build/css/alertify.min.css';
@@ -30,8 +32,16 @@ function App() {
             <Home />
         </Route>
 
-        <Route exact path="/movies">
+        <Route exact path="/playing">
             <GetMovies />
+        </Route>
+
+        <Route exact path="/popular">
+            <GetPopular />
+        </Route>
+
+        <Route exact path="/top-rated">
+            <GetTopRated />
         </Route>
 
         <Route exact path="/contact">
