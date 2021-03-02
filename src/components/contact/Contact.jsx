@@ -32,7 +32,7 @@ export const Contact = (props) => {
 
   return (
     <div  style={{backgroundColor:"#f8f4e5", height:"110vh"}}>
-      <h3> CONTACT </h3>
+      <h3 style={{marginTop:-1}}> CONTACT </h3>
       <Container fluid>
         <Row className="d-flex flex-row">
           <Col lg={8}>
